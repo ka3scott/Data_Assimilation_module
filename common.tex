@@ -1,0 +1,61 @@
+% Shared preamble for all four presentations. Works on a default Overleaf install.
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usetikzlibrary{arrows.meta,positioning,fit}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamersize{text margin left=7mm,text margin right=7mm}
+
+\definecolor{codegray}{RGB}{245,245,245}
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\scriptsize,
+  backgroundcolor=\color{codegray},
+  frame=single,
+  columns=fullflexible,
+  breaklines=true,
+  showstringspaces=false,
+  keywordstyle=\bfseries
+}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\bx}{\bm{x}}
+\newcommand{\by}{\bm{y}}
+\newcommand{\bu}{\bm{u}}
+\newcommand{\be}{\bm{e}}
+\newcommand{\bw}{\bm{w}}
+\newcommand{\bv}{\bm{v}}
+\newcommand{\bP}{\bm{P}}
+\newcommand{\bK}{\bm{K}}
+\newcommand{\bH}{\bm{H}}
+\newcommand{\bF}{\bm{F}}
+\newcommand{\bQ}{\bm{Q}}
+\newcommand{\bR}{\bm{R}}
+\newcommand{\bC}{\bm{C}}
+\newcommand{\bG}{\bm{G}}
+\newcommand{\bI}{\bm{I}}
+\newcommand{\bS}{\bm{S}}
+\newcommand{\bX}{\bm{X}}
+\newcommand{\bz}{\bm{z}}
+\newcommand{\dt}{\Delta t}
+
+\input{data/metrics.tex}
+
+\newenvironment{takeaway}{\begin{block}{Key idea}}{\end{block}}
+\newenvironment{warningbox}{\begin{alertblock}{Important}}{\end{alertblock}}
