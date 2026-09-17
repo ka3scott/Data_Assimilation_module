@@ -1,3 +1,5 @@
+This module was prepared by Maksym Veremchuk and will be updated by Andrea Scott. Please email ka3scott@uwaterloo.ca if you have any questions!
+
 # Data Assimilation in Nonlinear Fluid Flow — 4 presentations
 
 This is an Overleaf-ready project with four presentation modules. Each presentation contains 25–30 slides and is self-contained: a presentation may compare with methods introduced earlier, but it does not preview methods that have not yet been introduced.
